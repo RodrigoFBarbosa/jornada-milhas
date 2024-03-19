@@ -21,6 +21,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalComponent } from './shared/modal/modal.component';
+import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,9 @@ import { MatInputModule } from '@angular/material/input';
     HomeComponent,
     CardBuscaComponent,
     CardDepoimentosComponent,
-    FormBuscaComponent
+    FormBuscaComponent,
+    ModalComponent,
+    BotaoControleComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +54,9 @@ import { MatInputModule } from '@angular/material/input';
     MatChipsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
